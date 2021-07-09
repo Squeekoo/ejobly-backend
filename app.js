@@ -7,11 +7,11 @@ const cors = require("cors");
 
 const { NotFoundError } = require("./expressError");
 
-const { authenticateJWT } = require("./backend/middleware/auth");
-const authRoutes = require("./backend/routes/auth");
-const companiesRoutes = require("./backend/routes/companies");
-const usersRoutes = require("./backend/routes/users");
-const jobsRoutes = require("./backend/routes/jobs");
+const { authenticateJWT } = require("./middleware/auth");
+const authRoutes = require("./routes/auth");
+const companiesRoutes = require("./routes/companies");
+const usersRoutes = require("./routes/users");
+const jobsRoutes = require("./routes/jobs");
 
 const morgan = require("morgan");
 
